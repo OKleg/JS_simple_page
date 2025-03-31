@@ -1,0 +1,40 @@
+
+.title{
+    margin-top: 5px;
+    margin-left: 5%;
+    width: min-content;
+    :hover{
+      color: #646cff;
+    }
+  }
+
+.item{
+    width: 200px;
+    height: fit-content ;
+    border: 1px solid gray;
+    margin: 4%;
+    display: inline-block;
+}
+
+.image{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 200px ;
+    height: 300px;
+    margin-top: 10px;
+
+    
+}
+
+.info{
+    padding: 10px;
+}
+
+.info h2 {
+    margin-bottom: 0px;
+}
+
+.info p {
+    margin-bottom: 0px;   
+}

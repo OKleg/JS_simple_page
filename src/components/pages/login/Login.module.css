@@ -1,0 +1,28 @@
+.login_container{
+    margin-left: 20px;
+}
+.error{
+    padding: 5px;
+    color:darkred;
+    background-color: lightcoral;
+}
+.form{
+    margin: 10px;
+    
+}
+
+.form input{
+    
+    padding: 5px 10px;
+    border: none;
+    outline: none;
+    transition: border-color 0.46 ease;
+    border: 1px solid transparent;
+    margin: 10px;
+    background-color: #111;
+    color: #fff
+}
+
+.form input:focus{
+    border-color: 2px solid #123123;
+}
