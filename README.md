@@ -1,12 +1,33 @@
 # React + Vite
-
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## При запуске выполниь
+```
+   yarn
+   yarn dev
+```
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# Задание 
+Используемые технологии: React, Redux.
+Задача - Реализовать приложение, которое умеет показывать следующие страницы:
+- •	/ — главная
+- •	/login — страница ввода логина и пароля
+- •	/movies — страница со списком фильмов (плюсом будем, если запрашивать эти данные отсюда https://www.themoviedb.org/documentation/api?language=ru-RU)
+- •	/profile — страница с произвольным текстом, недоступная без авторизации
 
-## Expanding the ESLint configuration
+На сайте, в шапке или подвале реализовать ссылки:
+- •	На главную (/)
+- •	Фильмы (/movies)
+- •	Профиль (/profile)
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Если пользователь кликает на страницу “профиля” и он не “авторизован” — перекидывать на страницу /login
+Форма входа (/login) принимает “фейковые” данные:
+username: Admin
+password: 12345
+
+Если введены другие данные, то показывается сообщения: "Имя пользователя или пароль введены не верно"
+Если введены корректные данные, то перебрасывать на страницу /profile
+
+Информацию об авторизации пользователя можно хранить в localStorage, простым параметром true/false. Базу данных реализовать не нужно.
+Все, необходимое на ваш взгляд, прокинуть через Redux.
+**Оформление (дизайн) — не обязательно, но будет плюсом**.
